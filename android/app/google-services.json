@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "178156012005",
+    "firebase_url": "https://jumpin-ab7d5.firebaseio.com",
+    "project_id": "jumpin-ab7d5",
+    "storage_bucket": "jumpin-ab7d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178156012005:android:cf793d77d6d0aef8aaef0c",
+        "android_client_info": {
+          "package_name": "com.antizero.JumpIn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178156012005-ebd6b9rlup0sqn7q2qogv4g5hcc5dc9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.antizero.JumpIn",
+            "certificate_hash": "083e545f51420a224bbe89682dd93c3ec13f71e7"
+          }
+        },
+        {
+          "client_id": "178156012005-slhi13lre40ql3l4n23mnset5bcf0cn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJKN-aGSsBYPUXb1SBv17Rg0dG-DDOiys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178156012005-slhi13lre40ql3l4n23mnset5bcf0cn6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "178156012005-1ngjsdrjlnkh5bl3l0nrdb8q3ddvj8mr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.antizero.JumpIn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
