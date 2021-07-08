@@ -9,6 +9,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import "package:google_sign_in/google_sign_in.dart";
 
+import '../../features/people_home/data/model_jumpin_user.dart';
+import '../utils/route_constants.dart';
+import '../utils/sharedpref.dart';
+
 final FirebaseAuth auth = FirebaseAuth.instance;
 final GoogleSignIn googleSignIn = GoogleSignIn();
 JumpinUser jumpinUser;

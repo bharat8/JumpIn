@@ -1,7 +1,8 @@
-import 'package:JumpIn/core/utils/sharedpref.dart';
-import 'package:JumpIn/features/user_chats/data/model_message.dart';
-import 'package:JumpIn/features/user_utilities/data/model_connection.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+
+import '../../features/user_chats/data/model_message.dart';
+import '../../features/user_utilities/data/model_connection.dart';
+import '../utils/sharedpref.dart';
 
 class ChatService {
   static final Stream<DocumentSnapshot> connectionsDocumentsnapshotStream =

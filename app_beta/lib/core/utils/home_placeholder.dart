@@ -2,8 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:ui';
-
-import 'package:JumpIn/core/network/chat_service.dart';
 import 'package:JumpIn/core/network/notification_counter.dart';
 import 'package:JumpIn/core/utils/home_placeholder_provider.dart';
 import 'package:JumpIn/core/utils/web_view.dart';
@@ -11,9 +9,7 @@ import 'package:JumpIn/features/people_home/data/model_jumpin_user.dart';
 import 'package:JumpIn/features/people_home/domain/service_jumpin_people_home.dart';
 import 'package:JumpIn/features/people_home/presentation/screen_people_home.dart';
 import 'package:JumpIn/features/people_profile/domain/people_profile_controller.dart';
-import 'package:JumpIn/features/people_profile/presentation/screens/people_profile.dart';
 import 'package:JumpIn/features/plans_home/presentation/plans_home.dart';
-import 'package:JumpIn/features/user_chats/presentation/screens/people_conversation_screen.dart';
 import 'package:JumpIn/features/user_notifications/presentation/screens/notifications.dart';
 import 'package:JumpIn/features/user_profile/presentation/screens/user_profile.dart';
 import 'package:JumpIn/features/user_signup/domain/service_signup.dart';
@@ -26,7 +22,6 @@ import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:geocoder/geocoder.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart';
 import 'package:location/location.dart' as location;
@@ -975,33 +970,33 @@ class DrawerHeaderWidget extends StatelessWidget {
             )),
       ),
     );
-    return GestureDetector(
-      onTap: () {
-        Navigator.pushNamed(context, rUserProfile);
-      }, //redirect to user's profile},
-      child: Column(
-        children: [
-          CircleAvatar(
-              radius: 45,
-              backgroundColor: ColorsJumpin.interestCategorySelectedColor,
-              child: CircleAvatar(
-                  radius: 38,
-                  backgroundImage: NetworkImage(sharedPrefs.photoUrl))),
-          Container(
-            margin: EdgeInsets.all(8),
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                sharedPrefs.fullname,
-                style: TextStyle(
-                    fontFamily: font1,
-                    fontSize: SizeConfig.blockSizeVertical * 2.2,
-                    color: Colors.black),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
+    // return GestureDetector(
+    //   onTap: () {
+    //     Navigator.pushNamed(context, rUserProfile);
+    //   }, //redirect to user's profile},
+    //   child: Column(
+    //     children: [
+    //       CircleAvatar(
+    //           radius: 45,
+    //           backgroundColor: ColorsJumpin.interestCategorySelectedColor,
+    //           child: CircleAvatar(
+    //               radius: 38,
+    //               backgroundImage: NetworkImage(sharedPrefs.photoUrl))),
+    //       Container(
+    //         margin: EdgeInsets.all(8),
+    //         child: Align(
+    //           alignment: Alignment.center,
+    //           child: Text(
+    //             sharedPrefs.fullname,
+    //             style: TextStyle(
+    //                 fontFamily: font1,
+    //                 fontSize: SizeConfig.blockSizeVertical * 2.2,
+    //                 color: Colors.black),
+    //           ),
+    //         ),
+    //       ),
+    //     ],
+    //   ),
+    // );
   }
 }

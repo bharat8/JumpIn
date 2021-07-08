@@ -3,6 +3,10 @@ import 'package:JumpIn/features/user_utilities/data/model_connection.dart';
 import 'package:JumpIn/core/utils/sharedpref.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../../features/user_notifications/data/entity_notfication.dart';
+import '../../features/user_utilities/data/model_connection.dart';
+import '../utils/sharedpref.dart';
+
 class NotificationCounter {
   static Future getRequestCount() async {
     print("inside get request count\n");

@@ -5,6 +5,10 @@ import 'package:JumpIn/core/utils/sharedpref.dart';
 import 'package:JumpIn/core/utils/utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../../features/people_home/data/model_jumpin_user.dart';
+import '../../features/user_utilities/data/model_connection.dart';
+import '../utils/sharedpref.dart';
+
 Future getMutualFriends(String user_id) async {
   //get user's connection
   DocumentSnapshot usersRef = await FirebaseFirestore.instance

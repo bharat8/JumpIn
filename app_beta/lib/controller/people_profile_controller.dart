@@ -1,5 +1,5 @@
-import 'package:JumpIn/features/people_home/data/model_jumpin_user.dart';
 import 'package:get/state_manager.dart';
+import '../features/people_home/data/model_jumpin_user.dart';
 
 class PeopleProfileController extends GetxController {
   final user = JumpinUser().obs;

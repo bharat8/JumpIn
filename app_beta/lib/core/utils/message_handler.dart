@@ -1,12 +1,10 @@
 import 'package:JumpIn/core/network/chat_service.dart';
-import 'package:JumpIn/features/people_profile/presentation/screens/people_profile.dart';
 import 'package:JumpIn/features/user_chats/presentation/screens/people_conversation_screen.dart';
 import 'package:JumpIn/features/user_notifications/presentation/screens/notifications.dart';
 import 'package:JumpIn/features/user_utilities/data/model_connection.dart';
 import 'package:JumpIn/core/utils/route_constants.dart';
 import 'package:JumpIn/core/utils/sharedpref.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';

@@ -1,13 +1,9 @@
 import 'dart:convert';
-import 'dart:ffi';
 
 import 'package:JumpIn/core/utils/route_constants.dart';
 import 'package:JumpIn/core/utils/sharedpref.dart';
-import 'package:JumpIn/features/user_profile/domain/user_profile_controller.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dartz/dartz_unsafe.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class InterestPageProvider extends ChangeNotifier {
